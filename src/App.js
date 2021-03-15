@@ -12,7 +12,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch('https://api.airtable.com/v0/appSlgR2AobiefrRj/Table%201?api_key=keyl61uIeQVqWZBC1')
+    fetch('https://api.airtable.com/v0/appSlgR2AobiefrRj/Table%201?api_key=')
 
       .then(res => res.json())
       .then(res => {
