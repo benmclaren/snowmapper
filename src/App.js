@@ -12,7 +12,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch('https://api.airtable.com/v0/appSlgR2AobiefrRj/Table%201?api_key=')
+    fetch(`https://api.airtable.com/v0/appSlgR2AobiefrRj/Table%201?api_key=${process.env.REACT_APP_API_KEY}`)
 
       .then(res => res.json())
       .then(res => {
@@ -39,18 +39,5 @@ class App extends React.Component {
     );
   }
 }
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <Nav />
-//       <Intro />
-//       <Card />
-      
-//     </div>
-    
-//   );
-  
-// }
 
 export default App;
