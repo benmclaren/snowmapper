@@ -1,13 +1,5 @@
 const Menu = [
       {
-        children: 'Countries',
-        href: 'countries.html'
-      },
-      {
-        children: 'Resorts',
-        href: 'resorts.html'
-      },
-      {
         children: 'About',
         href: 'about.html'
       },

@@ -2,12 +2,12 @@ import React from 'react';
 
 const Intro = () => {
   return (
-    <div>
+    <div className="h-screen flex flex-col justify-center text-4xl font-semibold leading-10 w-1/2 m-auto text-indigo-900">
       <div>
-        SnowMapper🎿 is a directory of global ski resorts to show you everything you need to know before your next trip!
+        SnowMapper is a directory for freestyle skiers to discover the best snowparks in the world.
       </div>
-      <div>
-        From Lift times🚡 to weather🌨 to food🍔 , conquer the snow. Today.  
+      <div className="pt-4">
+        Find your next resort. Today.  
       </div>
     </div>
   )
