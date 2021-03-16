@@ -13,29 +13,26 @@ class App extends React.Component {
 
   componentDidMount() {
     fetch(`https://api.airtable.com/v0/appSlgR2AobiefrRj/Table%201?api_key=${process.env.REACT_APP_API_KEY}`)
-
       .then(res => res.json())
       .then(res => {
         console.log(res.records)
         this.setState({ ResortData: res.records })
       })
-      .catch(error => console.log(error))
+    .catch(error => console.log(error))
   }
 
   render() {
+   
     const { ResortData } = this.state
 
     return (
       <div className="App">
         <Nav />
         <Intro />
-        <Card />
         { ResortData.map(resort => (
-          <Card {...resort.fields} key={resort.fields.id} />
-        ))}
-        
+          <Card {...resort.fields} key={resort.id} />
+        ))}      
       </div>
-      
     );
   }
 }
