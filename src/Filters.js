@@ -13,7 +13,7 @@ class Filters extends Component {
         <div>
          <form>
            <select name="dropdown">
-           <option>Austria</option>
+           <option>France</option>
            </select>
          </form>
 
