@@ -36,7 +36,6 @@ class App extends React.Component {
         <Intro />
 
           <Filters {...{ResortData}} />
-          {console.log(ResortData)}
      
         <div className="container grid grid-cols-4 gap-4 m-auto">
           { ResortData.map(resort => (
